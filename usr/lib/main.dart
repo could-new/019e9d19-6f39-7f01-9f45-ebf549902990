@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 
 import 'screens/splash_screen.dart';
-import 'screens/auth/login_screen.dart';
+import 'screens/auth_screen.dart';
 import 'screens/dashboard_screen.dart';
+import 'screens/feed_screen.dart';
+import 'screens/messenger_screen.dart';
+import 'screens/profile_screen.dart';
+import 'screens/ai_assistant_screen.dart';
+import 'screens/notifications_screen.dart';
+import 'screens/leaderboard_screen.dart';
 
 void main() {
   runApp(const BosniaConnectApp());
@@ -26,8 +32,15 @@ class BosniaConnectApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const SplashScreen(),
-        '/login': (context) => const LoginScreen(),
+        '/login': (context) => const AuthScreen(),
+        '/auth': (context) => const AuthScreen(),
         '/dashboard': (context) => const DashboardScreen(),
+        '/feed': (context) => const FeedScreen(),
+        '/messenger': (context) => const MessengerScreen(),
+        '/profile': (context) => const ProfileScreen(),
+        '/ai_assistant': (context) => const AiAssistantScreen(),
+        '/notifications': (context) => const NotificationsScreen(),
+        '/leaderboard': (context) => const LeaderboardScreen(),
       },
     );
   }
